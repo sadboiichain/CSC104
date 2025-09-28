@@ -1,21 +1,91 @@
+<!-- This tells the browser this is an HTML 5 file. -->
 <!DOCTYPE html>
+<!--    Holds page content
+        lang="en" helps the browser know the language the webpage was written in, good for accessibility
+-->
+ <html lang="en">
 
-<head>
+    <!-- Header section that has configuration information for browser and Search engines. -->
+    <head>
 
-    <script src="Transfer.js"></script>
+        <!-- This tells the browser that any character from any language can be found here -->
+        <meta charset="UTF-8">
 
-    <title>
-        Welcome
-    </title>
+        <!-- Assists browsers in scaling the content on all devices, helps for mobile. 
+         First Step in Responsive Design. 
+         -->
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
 
-</head>
+        <!-- A simple JavaScript file used by the buttons to transfer pages. -->
+        <script src="Transfer.js"></script>
 
-<body>
+        <!-- The name for the page, found on the tab -->
+        <title>
+            HTML Basics & Welcome
+        </title>
 
-    <button onclick="test()"> TEST </button>
+    <!-- End of Head tag -->
+    </head>
 
-    <p></p>
+    <!-- Where the content goes. -->
+    <body>
 
-    <img src="/Images/UATspaceLogo-2.jpg" alt="The logo of the University of Advancing Technology Space Mission. The text states Mission 3">
-    
-</body>
+        <!--    Generic tag to organize content, usually at the top of the page.
+                Header can have Logo, Menu, Page Title
+        -->
+        <header>
+
+        <!-- Header text used for screen readers to organize content, ONLY USE ONE WHEN POSSIBLE -->
+        <h1 style="font-size: xx-large; font:bolder ";>HTML Basics & Welcome</h1>
+        
+        <!-- Closes the header tag -->
+        </header>
+
+        <!-- Generic tag to organize content, focused on the center or main content. -->
+        <main>
+
+        <!-- Header text at various sizes from h2 to h6. -->
+        <h2 style="font-size: large;">I am in Main! </h2>
+
+        <!-- Paragraph tag to move space and give blocks of text -->
+        <p>Paragraphs are better for blocks of text that need their own space. you need other methods to keep text close</p>
+
+        <!-- ul = Unordered list to show dates with bullet points -->
+        <ul>
+            <!-- li = List item, each item should be within its own tags -->
+             <li> HTML 1.0 - Developed in Early 1990's </li>
+             <li> HTML 2.0 - Released in 1995 </li>
+             <li> HTML 3.2 - Released in 1997</li>
+             <li> HTML 4.01 - Released in 1999</li>
+             <li> HTML 5.0 - Released in 2014 - Living Standard</li>
+
+        </ul>
+
+        <!-- Div is used as a division of content -->
+        <div></div>
+
+        <!--An image added to improve the feel of the site. 
+            src-"" is source 
+            add a (.) to get relative file path
+            alt="" is alt text for screen readers 
+          -->
+        <img src="./UATspaceLogo-2.jpg" alt="The logo of the University of Advancing Technology Space Mission. The text states Mission 3">
+
+        <!-- A paragraph of text tha offers spacing around it. -->
+        <p>The button below takes you into the testing area.</p>
+
+        <!-- A button to take you to Testing.html -->
+        <button onclick="test()"> CLICK ME </button>
+
+        <!-- Closes the main tag -->
+        </main>
+
+        <!-- Generic tag for organization, usually at the bottom of the webpage. -->
+        <footer>
+
+        <!-- Closing tag of the Footer -->
+        </footer>
+    <!-- Ending of the Body tag -->
+    </body>
+<!-- Final tag of the file, The End. -->
+</html>
