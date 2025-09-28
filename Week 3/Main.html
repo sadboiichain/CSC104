@@ -50,8 +50,12 @@
         <!-- Paragraph tag to move space and give blocks of text -->
         <p>Paragraphs are better for blocks of text that need their own space. you need other methods to keep text close</p>
 
+        <!-- Selectors can be an HTML Element, ID of and Elemnt, or  custom class-->
+        Selector(property: value;)
+        {
+
         <!-- ul = Unordered list to show dates with bullet points -->
-        <ul>
+        <ul id="HTML List">
             <!-- li = List item, each item should be within its own tags -->
              <li> HTML 1.0 - Developed in Early 1990's </li>
              <li> HTML 2.0 - Released in 1995 </li>
@@ -60,6 +64,43 @@
              <li> HTML 5.0 - Released in 2014 - Living Standard</li>
 
         </ul>
+            
+        }
+
+        <!-- This is how you can store embedded css styles:
+            External: Separate .css file
+            Embedded: <style=""> tags in the head sections
+            Inline: Each item get its own <style=""> elements in the tag
+        
+        -->
+
+        <style>
+            body{
+                background-color:darkorange;
+                color: black;
+                font-family: serif;
+            }
+
+            p{
+                color:darkmagenta;
+            }
+
+
+            /*
+            multi line comments
+            look like this
+            in CSS
+            */
+        </style>
+
+
+        <!-- Pre tags will leavae the content inside alone, wihtout removing blank spaces -->
+        <pre>
+            This is in the pre tag. its weird
+        im here now. its sensitive.
+        </pre>
+
+
 
         <!-- Div is used as a division of content -->
         <div></div>
