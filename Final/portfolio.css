@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    font-size:large;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:white;
+}
+
+nav a {
+    color:white;
+    font-size: large;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+a {
+    color:black;
+    font-size: large;
+    padding: 10px;
+}
+
+image {
+    width:fit-content;
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.flexColumn{
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.gameImage{
+    width: 100%;
+    max-width: 500px;
+}

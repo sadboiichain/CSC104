@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+    <head>
+        <!-- Meta tags for formatting -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        
+        <!-- Title of page -->
+        <title>
+            The Not-So-Grand Casino Redux!
+        </title>
+
+        <!-- The javascript from the old page, copied with only formatting changes-->
+        <script src="casinoRedux.js"></script>
+        <!-- The CSS of the page-->
+        <link rel="stylesheet" type="text/css" href="casinoRedux.css">
+
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <a href="Main.html">Home</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="casinoRedux.html">Casino</a>
+            </nav>
+            
+            <!--Text explanation of the page-->
+            <p>
+            This page is a personal showcase of my past and how it has changed. <br>
+            Below this text will be an image of the original look of the site from an old assignment. <br> 
+
+            Starting at the "Welcome to the Casino" text, anything on the site is the original HTML and JavaScript I wrote 4 years ago. <br>
+            Everything present serves as a growth indicator of my understanding in accessible design as well as a chance to return to a project and fix the things I felt were unappealing to look at. <br>
+            I have also added some buttons that tell how to play each game, as this was a feature I lacked. <br>
+            <br>
+            The old look:
+            </p>
+
+            <!--Picture of the original site-->
+            <img src="./originalCasinoLook.png" alt="A screenshot of the site that no longer reflects how the site looks. The background is a bright red, the text is black and hard to read. The buttons present in the image are a bright green." >
+
+            <!-- The help section-->
+            <p>How to play:</p>
+            <button onclick="crapsHelp()">Craps</button>
+            <button onclick="hlHelp()">Higher or Lower</button>
+            <button onclick="cTossHelp()">Coin Toss</button>
+            <br>
+            <br>
+            <div id="howTo"></div>
+
+            <p>Please enjoy the return of: The Not-So-Grand Casino!</p>
+
+        </header>
+        <main>
+
+            <!-- EVERYTHING BELOW HERE IS UNTOUCHED AS LONG AS IT DID NO THROW AN ERROR-->
+
+            <!-- This is to introduce the craps coding -->
+            <h1>Welcome to the Casino!</h1> 
+            <br>
+            <h2>Welcome to Craps!<br> Press the button to begin.</h2>
+
+                <!-- button to roll the dice -->
+            <button  onclick="craps()" >Roll the Dice</button>
+            <br>
+            <br> 
+            <!-- div for transfer between java and html -->
+            <div id="die1Result">Die 1: #</div>
+            <div id="die2Result">Die 2: #</div>
+            <div id="sumResult">The sum of the numbers is: #</div>
+            <div id="conclusion"></div>
+            <br>
+
+
+
+            <!-- trying other games: Higher or Lower -->
+            <h2>Welcome to Higher or Lower!<br> Press the buttons to try your luck.</h2>
+
+            <!-- Start the game  -->
+            <button onclick="high()" class="button">High</button>
+            <button onclick="even()" class="button">Equal</button>
+            <button onclick="low()" class="button">Low</button>
+
+
+            <br>
+            <br>
+            <!-- the details -->
+            <div id= "dealer">Dealer Roll: ? </div>
+            <div id= "player">Player Roll: ? </div>
+            <div id= "concHi"></div>
+
+
+            <!-- trying other games: Coin Toss -->
+            <h2>Welcome to Coin Toss!<br> Press the buttons to try your luck.</h2>
+
+            <!-- the button to flip a coin -->
+            <button  onclick="heads()" class="button">Heads</button>
+            <button  onclick="tails()" class="button">Tails</button>
+
+            <br>
+            <br>
+            <!-- the details -->
+            <div id= "coin"></div>
+
+
+        </main>
+    </body>
+
+
+</html>
