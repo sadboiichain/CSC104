@@ -17,3 +17,22 @@ nav a:hover{
     color: blue;
 }
 
+image {
+    width:fit-content;
+}
+
+table, th, td{
+    margin: auto;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    color:white;
+    font-size: large;
+
+}
